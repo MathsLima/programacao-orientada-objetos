@@ -33,5 +33,4 @@ public class Funcionario {
             return false;
         }
     }
-
 }
