@@ -71,5 +71,5 @@ momento
 • caixasParados():int → apresenta a quantidade de caixas que estão parados neste
 momento.
 
-(D:/Programaçao/programacao-orientada-objetos/exercicios/03-modelagem-orientada-objetos/simulador-supermercado/SimuladorSupermercado.png)
+![UML](D:/Programaçao/programacao-orientada-objetos/exercicios/03-modelagem-orientada-objetos/simulador-supermercado/SimuladorSupermercado.png)
 
