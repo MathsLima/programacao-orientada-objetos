@@ -6,7 +6,7 @@ public class Placa{
 
     public Placa(String pais,String codigo){
         this.pais = pais;
-        if (Pattern.matches("[A-Z]{3}[0-9][A-Z][0-9]{2}", codigo) == true){
+        if (Pattern.matches("[A-Z]{3}[0-9][A-Z][0-9]{2}", codigo)){
             this.codigo = codigo;
         }else{
             this.codigo = "AAA0A00";

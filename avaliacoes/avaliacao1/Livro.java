@@ -9,7 +9,7 @@ public class Livro
     public Livro(String titulo, String autor, int quantCapitulo, int quantPaginas){
         this.titulo = titulo;
         this.autor = autor;
-        this.capitulo = new Capitulo[quantCapitulo];
+        this.capitulo = new Capitulo[quantCapitulo];  //ao inves de passar quantCapitulo poderia passar o numero de capitulos que podem ser adicionados
         this.quantCapitulo = 0;
         this.quantPaginas = 0;
     }
@@ -33,4 +33,13 @@ public class Livro
             System.out.println(capitulo[indice].getCapitulo());
         }
     }
+    /* 
+    public int getquantPaginas(){
+        int total = 0;
+        for(int capitulo = 0; quantCapitulo; capitulo++){
+            total += capitulo.getquantPaginas();
+            return total;
+        }
+    }
+    */
 }

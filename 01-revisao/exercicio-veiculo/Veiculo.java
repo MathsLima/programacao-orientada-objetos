@@ -2,10 +2,12 @@ public class Veiculo{
     private final double consumoPorLitro = 10;
     private Placa placa;
     private double combustivel;
+    private double capacidadeTanque;
     
-    public Veiculo(Placa placa){
+    public Veiculo(Placa placa, double capacidade){
         this.placa = placa;
         combustivel = 0;
+        capacidadeTanque = capacidade;
     }
 
     public void setPais(String pais){
@@ -21,8 +23,9 @@ public class Veiculo{
     }
 
     public double abastece(double litros){
-        if (litros > 0.0){
-            combustivel += litros;
+        if ((litros > 0.0) && (combustivel + litros <= capacidadeTanque)){
+            //combustivel += litros;
+            combustivel = combustivel + litros;
         }
         return combustivel;
     }
