@@ -5,4 +5,4 @@ retorna a informação do valor do ingresso.
 Adicional. O método toString da classe IngressoVIP considera que o valor do
 ingresso é o valor da superclasse somado ao valor Adicional do IngressoVIP.
 
--Uma classe para testar os objetos das classes Ingresso e IngressoVIP.
+- Uma classe para testar os objetos das classes Ingresso e IngressoVIP.
