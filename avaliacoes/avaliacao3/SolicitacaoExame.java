@@ -36,6 +36,10 @@ public class SolicitacaoExame {
         return exames;
     }
 
+    public void adicionarExame(Exame exm){
+        exames.add(exm);
+    }
+
     public double valorExame(){
         double valor = 0;
         for(Exame exm : exames){

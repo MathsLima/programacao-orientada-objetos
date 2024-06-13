@@ -1,4 +1,5 @@
 import java.util.*;
+
 public class Cliente {
     private String cpf;
     private String nome;
@@ -35,6 +36,14 @@ public class Cliente {
         for(SolicitacaoExame solic : solicitacoes){
             valor += solic.valorExame();
         }
-        return valor;
+        return valor / solicitacoes.size();
+    }
+
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "cpf='" + cpf + '\'' +
+                ", nome='" + nome + '\'' +
+                '}';
     }
 }
