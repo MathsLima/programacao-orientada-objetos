@@ -1,2 +1,2 @@
 # programacao-orientada-objetos
-Repositorio para a disciplina de programaçao orientada a objetos 
+Repositorio para codigos de programaçao orientada a objetos em JAVA
