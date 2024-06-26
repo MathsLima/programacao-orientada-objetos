@@ -55,14 +55,18 @@ public class App extends JFrame {
 
         add(centerPanel, BorderLayout.CENTER);
 
+         addEntrega.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                addEntrega dialog = new addEntrega(App.this, transportadora);
+                dialog.setVisible(true);
+            }
+        });
+
         this.setVisible(true);
     }
-
-
-
 
     public static void main(String[] args) {
         App app = new App();
     }
-
 }
