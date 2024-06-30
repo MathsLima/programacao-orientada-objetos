@@ -12,8 +12,10 @@ public class Transportadora {
         //dados de exemplo setados inicialmente
         Caminhao caminhao1 = new Caminhao("ABC-1234", "Scania");
         Caminhao caminhao2 = new Caminhao("BCA-1635", "Mercedes");
+        Caminhao caminhao3 = new Caminhao("XYZ-7777", "Volvo");
         caminhoes.add(caminhao1);
         caminhoes.add(caminhao2);
+        caminhoes.add(caminhao3);
 
         Entrega entrega1 = new Entrega(25, caminhao1);
         entrega1.adicionarCarga(new Carga(30));
@@ -53,13 +55,14 @@ public class Transportadora {
         return caminhoes;
     }
 
+
     public double consultarValoresEntregas(){
         return entregas.stream()
                 .mapToDouble(Entrega::calcularValorTotal)
                 .sum();
     }
 
-    public void adicionarCaminhao(Caminhao cam){
+    public void adicionarCaminhao(Caminhao cam) {
         caminhoes.add(cam);
     }
 }
