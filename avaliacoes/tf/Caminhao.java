@@ -1,12 +1,10 @@
 public class Caminhao {
     private String placa;
     private String modelo;
-    private int ano;
 
-    public Caminhao(String placa, String modelo, int ano) {
+    public Caminhao(String placa, String modelo) {
         this.placa = placa;
         this.modelo = modelo;
-        this.ano = ano;
     }
 
     public String getPlaca() {
@@ -17,16 +15,11 @@ public class Caminhao {
         return modelo;
     }
 
-    public int getAno() {
-        return ano;
-    }
-
     @Override
     public String toString() {
         return "Caminhao{" +
                 "placa='" + placa + '\'' +
-                ", modelo='" + modelo + '\'' +
-                ", ano=" + ano +
+                ", modelo='" + modelo +
                 '}';
     }
 }
