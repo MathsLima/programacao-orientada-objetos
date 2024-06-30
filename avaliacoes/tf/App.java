@@ -12,11 +12,13 @@ public class App extends JFrame {
     public App() {
         super();
         this.setTitle("transPOOrtes java ltda");
-        this.setSize(525,400
-        );
+        this.setSize(525,400);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        this.setResizable(false);
+        this.setLayout(new BorderLayout(10, 10));
 
-        setLayout(new BorderLayout(10, 10));
+        //inicializa a transportadora
+        transportadora = new Transportadora();
 
         //bloco texto inicial
         JLabel bemvindo = new JLabel("Sistema de Transportadora de Cargas", SwingConstants.CENTER);
@@ -55,10 +57,18 @@ public class App extends JFrame {
 
         add(centerPanel, BorderLayout.CENTER);
 
-         addEntrega.addActionListener(new ActionListener() {
+        addEntrega.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 addEntrega dialog = new addEntrega(App.this, transportadora);
+                dialog.setVisible(true);
+            }
+        });
+
+        consultarEntrega.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                ConsultaEntrega dialog = new ConsultaEntrega(App.this, transportadora);
                 dialog.setVisible(true);
             }
         });
