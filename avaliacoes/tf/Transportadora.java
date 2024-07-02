@@ -1,5 +1,7 @@
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Objects;
 
 public class Transportadora {
     private List<Entrega> entregas;
@@ -8,6 +10,7 @@ public class Transportadora {
     public Transportadora() {
         entregas = new ArrayList<>();
         caminhoes = new ArrayList<>();
+
 
         //dados de exemplo setados inicialmente
         Caminhao caminhao1 = new Caminhao("ABC-1234", "Scania");
@@ -34,10 +37,9 @@ public class Transportadora {
         entregas.add(entrega);
     }
 
-    public void deletarEntrega (int id) throws ExcessaoPersonalizada {
-        for (Entrega ent: entregas){
-            entregas.removeIf(entrega -> ent.getId() == id);
-        }
+    public boolean deletarEntrega (int id) throws ExcessaoPersonalizada {
+        entregas.removeIf(Objects::nonNull);
+        return false;
     }
 
     public Entrega consultarEntregaID (int id) throws ExcessaoPersonalizada {

@@ -15,6 +15,8 @@ public class Entrega {
         this.caminhao = caminhao;
     }
 
+
+
     public int getId() {
         return id;
     }

@@ -73,6 +73,17 @@ public class App extends JFrame {
             }
         });
 
+        deletarEntrega.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                DeletarEntrega delet = new DeletarEntrega(transportadora);
+                delet.setVisible(true);
+                
+            }
+        });
+
+
+
         this.setVisible(true);
     }
 
